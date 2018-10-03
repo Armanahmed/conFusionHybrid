@@ -56,15 +56,15 @@ export class FavoritesPage implements OnInit {
               message: 'Dish ' + id + ' deleted successfully', duration: 3000
             });
             loading.present();
-              this.favoriteservice.deleteFavorite(id)
-                .subscribe(favorites => { this.favorites = favorites; loading.dismiss(); toast.present(); }, errmess => { this.errMess = errmess; loading.dismiss(); });
+            this.favoriteservice.deleteFavorite(id)
+              .subscribe(favorites => { this.favorites = favorites; loading.dismiss(); toast.present(); }, errmess => { this.errMess = errmess; loading.dismiss(); });
           }
         }
       ]
     });
     
     alert.present();
-    
+
   	item.close();
   }
 

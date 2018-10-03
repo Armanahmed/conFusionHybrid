@@ -60,7 +60,7 @@ import { FavoriteProvider } from '../providers/favorite/favorite';
     PromotionProvider,
     ProcessHttpmsgProvider,
     {provide: 'BaseURL', useValue: baseURL },
-    FavoriteProvider
+    FavoriteProvider,
   ]
 })
 export class AppModule {}
